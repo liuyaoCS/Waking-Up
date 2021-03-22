@@ -284,7 +284,7 @@ void test_forks(int i) {
 </details>
 
 <details>
-<summary>多级反馈队列调度算法 Multilevel Feedback Queue</summary>
+<summary>多级反馈队列调度算法 Multilevel Feedback Queue（SCHED_OTHER linux默认策略）</summary>
 
 设置多个就绪队列1、2、3...，优先级递减，时间片递增。只有等到优先级更高的队列为空时才会调度当前队列中的进程。如果进程用完了当前队列的时间片还未执行完，则会被移到下一队列。
 
